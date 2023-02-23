@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <!-- Terdapat 5 element/tag yang sering digunakan pada form yaitu
+    input user dapat menginputkan sesuatu
+    textarea seperti textfield namun lebih banyak
+    select untuk membuat dropdown atau combo box
+    button tombol u/ mengirim data
+    label menandai elemen input
+    -->
+
+    <!-- terdapat beberapa type pada input yaitu
+    text
+    password
+    radio
+    checkbox
+    submit
+    reset
+    button
+    -->
+
+    <form action="">
+        <label for="username">username : </label>
+        <input type="text" id="username"> <!-- id harus sama dengan for di label-->
+            <br>
+        <label for="password">password : </label>
+        <input type="password"  id="password">
+            <br>
+        <input type="radio" id="pria" name="gender"><label for="pria">pria</label> <!-- name diperlukan sehingga tidak dapat memilih kedua pilihan-->
+        <input type="radio" id="wanita" name="gender"><label for="wanita">wanita</label>
+        <!-- jika ingin lebih dari satu pakai checkbox -->
+            <br>
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+        <input type="checkbox" id="membaca"><label for="membaca">membaca</label>
+        <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+            <br>
+        <label for="isian">deskripsi</label> <br>
+        <textarea id="isian" cols="50" rows="5" ></textarea>
+        <!-- dropdown-->
+            <br>
+            <label for="lahir">Tempat lahir :</label>
+            <select id="lahir">
+                <option>Padang</option>
+                <option>Tangerang</option>
+                <option>Jakarta</option>
+            </select>
+            <br>
+        <!-- <input type="submit" value="kirim"> tidak disarankan pakai ini kalau bisa pakai button -->
+        <button>kirim</button>
+    </form>
+    
+    <hr>
+
+    <!-- dirapihkan dengan table  -->
+
+    <form action="">
+        <table border="0" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>
+                    <label for="username">username : </label>
+                </td>
+                <td>
+                    <input type="text" id="username"> <!-- id harus sama dengan for di label-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">password : </label>
+                </td>
+                <td>
+                    <input type="password"  id="password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="radio" id="pria" name="gender"><label for="pria">pria</label> <!-- name diperlukan sehingga tidak dapat memilih kedua pilihan-->
+                    <input type="radio" id="wanita" name="gender"><label for="wanita">wanita</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+                    <input type="checkbox" id="membaca"><label for="membaca">membaca</label>
+                    <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="isian">deskripsi</label> <br>
+                    <textarea id="isian" cols="50" rows="5" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lahir">Tempat lahir :</label>
+                </td>
+                <td>
+                    <select id="lahir">
+                        <option>Padang</option>
+                        <option>Tangerang</option>
+                        <option>Jakarta</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button>kirim</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
