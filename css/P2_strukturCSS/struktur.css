@@ -1,0 +1,12 @@
+/* 
+anatomi css yaitu
+selector {property: value;}
+selector untuk memilih dan memanipulasi elemen spesifik pada html
+elemen bisa tag, ud, ckass, bahkan pola/pattern
+*/
+
+h1 {
+    color: blue;
+    font-family: arial;
+    font-size: 30px;
+}
