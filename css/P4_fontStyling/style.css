@@ -1,0 +1,60 @@
+/* 
+terdapat beberapa properti yang dimiliki css mengenai font 
+font-family mengatur jenis font yang akan digunakan
+font-size mengatur ukuran font
+font-weight mengatur ketebalan font
+font-variant mengubah font menjadi small caps
+font-style mengubah font menjadi bercetak miring
+line-height mengatur spasi antar baris
+
+font-family memiliki dua value yaitu nama font dan generic family
+body {
+    font-family: arial, verdana, sans-serif;
+}
+font pertama dicari arial jika tidak ada verdana jika tidak maka sans-serif
+
+arial dan verdana merupakan nama font dan sans-serif merupakan generic famiy
+
+font-size untuk mengatur ukuran font yang dapat bervalue berupa px, %, em
+font-weight untuk membuat font jadi bold value berupa lighter, normal, 100-900,bold,bolder
+font-variant bervalue normal dan small-caps
+font-style untuk membuat tulisan menjadi miring dengan value normal, italic, oblique
+italic akan memaksakan font miring walau tidak ada, sedangkan oblique akan mengecek apakah font ada huruf miring
+line-height untuk mengatur jarak dengan value normal, px, dan em
+*/
+
+h1 {
+    font-family: arial,Verdana, sans-serif;
+    font-size: 100px;
+    font-style: italic;
+}
+
+h2 {
+    font-family: arial,Verdana, sans-serif;
+    font-variant: small-caps;
+    font-size: oblique ;
+}
+
+p {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+/* pada font terdapat css font shorthand/singkatan dari
+body{
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: helvetica, arial, sans-serif;
+}
+
+menjadi
+body{
+    font: italic normal bold 16px/18px helvetica, arial, sans-serif;
+}
+
+urutan harus sesuai yang wajib ada yaitu font-size dan font-family sisanya opsional
+ */
