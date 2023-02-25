@@ -1,0 +1,19 @@
+/*
+berikut merupakan beberapa properti untuk background
+background-color mengatur warna background
+background-image mengatur gambar yang akan dijadikan background
+background-posisition mengatur posisi gambar pada background
+backgorund-repeat mengatur pengulangan gambar pada background
+
+css background dapat dishorthand
+background : color url() position repeat
+*/
+
+
+body {
+    background-color:lightblue;
+    background-image: url(logounand.png);
+    background-repeat: no-repeat; /* hanya mengulang pada sumbu x, bisa repeat-x, repeat-y atau no-repeat*/
+    /* jika no-repeat bisa background-position */
+    background-position: top center; /*bisa top/center/bottom left/center/right bisa di kombinasikan selain itu bisa juga x% y% atau x-pos y-pos*/
+} 
