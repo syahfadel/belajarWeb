@@ -1,16 +1,22 @@
 <html>
 <head>
     <title>JavaScript</title>
+    <script>
+        alert('ini dari head');
+    </script>
 </head>
 <body>
     <h1>Hello world!</h1>
     <!-- cara untuk berinteraksi dengan js yaitu dengan menuliskan script js di halaman html
     dapat disimpan di file yang sama ataupun file terpisah dari html 
     menuliskan js dapat dibuat didalam tag html <script></script> yang akan disimpan diakhir body
+    supaya seluruh elemen html di load dulu ke memori baru menjalankan java script
     -->
     
     <script>
-        alert('Hello World!'); //pada file yang sama
+        alert('Hello World dari body!'); //pada file yang sama dapat dilakukan di body dan head
+        var x;
+        x= 10;
     </script>
     <!-- mengakses js pada file terpisah dengan menambahkan atribut src dengan nilai file js yang dituju -->
     <script src="Latihan.js"></script>
