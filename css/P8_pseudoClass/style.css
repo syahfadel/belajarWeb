@@ -1,0 +1,77 @@
+/* pseudo calss adalah class semu yang dimiliki oleh element HTML yang membuat kita dapat mendefinisikan
+style pada keadaan tertentu dari element tersebut 
+pseudo class link terdiri dari beberapa tipe yaitu
+:link style default pada link
+:hover aktif ketika elemen disorot mouse
+:active ketika di klik
+:visited ketika sudah dikunjungi 
+*/
+
+a{
+    text-decoration: none;
+}
+.hello:link{
+    color: orange;
+}
+
+.hello:hover{
+    color: green;
+    font-family: arial;
+    font-size: 20px;
+}
+
+.hello:active{
+    font-style: italic;
+}
+
+.hello:visited{
+    color: red;
+}
+
+/*
+pseudo class kedua yang berhubungan dengan posisi element
+hanya akan aktif ketika elemen merupakan child dari element lain
+:first-child
+:last-child
+:nth-child(n)
+
+misal pada index.html li merupakan child dari ul yang berarti ul punya 10 anak sedangkan li hanya 1 anak karena hanya memiliki a
+*/
+
+/* anak pertama pada bagian li yang berisikan elemen a */
+li:first-child a{
+    color: green;
+}
+
+li:last-child a{
+    color: lime;
+}
+
+li:nth-child(5) a{
+    color: cyan ;
+}
+
+/* berarti pada setiap kelipatan 3 */
+li:nth-child(3n) a{
+    color: salmon ;
+}
+
+/* 
+jika kelipatan 3 namun dimulai dari 1
+li:nth-child(3n-2) a{
+    color: salmon ;
+} */
+ 
+li:nth-child(odd) a:hover{
+    color: red;
+}
+
+/* 
+pseudo class ketiga yaitu berdasarkan posisi elemen namun tidak memiliki child 
+:first-of-type
+:last-of-type
+*/
+
+p:first-of-type {
+    color: magenta;
+}
