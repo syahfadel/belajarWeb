@@ -1,0 +1,43 @@
+/* 
+berikut beberapa properti yang terdapat pada text styling
+•color memnberi warna pada tulisan
+dapat memberikan beberapa tipe warna berdasarkan nama,hexadecimal, dan rgb
+•text-align mengatur format paragraf/ teks seperti rata kiri, kanan, justify, atau tengah
+dapat bernilai left, right, center, dan justify
+•text-indent memberi indentasi atau seperti tombol tab pada paragraf/text
+dapat bernilai px dan %
+•text-decoration mengatur dekorasi pada teks untuk memberi seperti underline atau dicoret dsb
+dapat bernilai none, underline (dibawah tulisan), overline (dibawah diatas), line-through(ditulisan)
+•text-transform mengubah jenis huruf menjadi huruf besar, kecil/kapital
+dapat bernilai none, lowercase, uppercase, capitalize
+•letter-spacing untuk mengatur jarak antar huruf
+dapat bernilai normal dan px
+•word-spacing mengatur jarak antar kata
+dapat bernilai normal dan px
+
+*/
+
+h1 {
+    font-size: 120px;
+    color:skyblue;
+    text-align: center ;
+}
+
+h2 {
+    color: rgb(10, 25, 100);
+    text-align: right;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+p {
+    color: #20b220;
+    text-align: justify;
+    text-indent: 100px;
+    text-transform: capitalize;
+    /* word-spacing: 5px; */
+}
+
+a{
+    text-decoration: none;
+}
