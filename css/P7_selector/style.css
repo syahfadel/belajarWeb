@@ -1,0 +1,54 @@
+/* 
+ selector digunakan pada css untuk mengenali element atau tag html yang akan diberi style
+ ada beberapa hal yang dapat digunakan yaitu
+ elemen HTML
+ id
+ class
+ complex selector
+*/
+
+body {
+    font-family: arial;
+}
+
+/* pakai koma jika lebih dari satu selector */
+h1,h2 {
+    color: greenyellow;
+}
+
+/* operator spasi jika ingin memilih didalam selektor sebelumnya */
+ul li a{
+    color: lime;
+}
+
+ol li a{
+    color: red;
+}
+
+/* 
+perbedaan id dan class
+ •pada sebuah elemen HTML hanya boleh memiliki 1 id
+•setiap halaman hanya boleh memiliki 1 elemen dengan id tersebut
+•dapat digunakan sebagai penanda halaman untuk link
+•dapat digunakan untuk javascript
+•sebaiknya tidak digunakan untuk css
+
+*/
+
+/* id pakai # */
+#p1{
+    color: orange;
+}
+
+/* jika class gunakan titik */
+.p2 {
+    color: salmon;
+} 
+
+.cetak-tebal{
+    font-weight: bold;
+}
+
+p .cetak-tebal {
+    font-size: 20px;
+}
