@@ -21,6 +21,7 @@ jika tidak diatur lebarnya maka defaultnya memenuhi browser atau parentnya
 kita dapat mengatur tinggi dan lebar dari elemen block
 di dalam elemen block kita dapat menyimpan tag dengan elemen inline, inline block, atau bahkan elemen block lagi
 • none
+untuk menghilangkan elemen dari halaman elemen
 
 setiap tag memiliki properties display
 div defaultnya
