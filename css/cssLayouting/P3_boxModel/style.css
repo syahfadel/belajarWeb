@@ -1,0 +1,99 @@
+/*
+css box model terdiri dari
+margin merupakan area transparan disekitar kotak (diluar border)
+border batas disekeliling content dan padding
+padding area transparan di dalam kotak (antara content dan border)
+content konten sebenarnya di dalam box, bisa berupa teks atau gambar
+
+properti untuk margin,padding, dan border
+properti-top
+properti-bottom
+properti-left
+properti-right
+properti
+properti ganti dengan margin/padding/border
+*/
+
+h1,h2{
+    text-align: center;
+}
+
+.satu{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    /*
+    dapat di shorthand dengan
+    margin : 50px seluruh posisi akan 50 
+    margin : 50px 100px kiri kanan 50 atas bawah 100
+    margin : 30px 50px 100px atas 30 kiri kanan 50 bawah 100
+    margin : 10px 20px 30px 40px atas 10 kanan 20 bawah 30 kiri 40
+    */
+}
+
+/*
+overlapping margin sat menggabungkan 2 buah margin
+nilai margin dapat diberikan negatif sehingga dapat berlawanan arah
+terdapat juga nilai auto kedua sisi harus diberi auto sehingga elemen berada di tengah tengah parent
+*/
+.dua{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 20px; /*margin tidak akan saling menambahkan jika vertikal yang dicari yang paling besar*/
+    margin-right: 20px; /*jika horizontal akan terpengaruh*/
+    display: inline-block;
+}
+
+.tiga{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.padding {
+    /* padding tidak bisa negatif dan auto */
+    /* padding mempengaruhi ukutan element atau box elemen
+      */
+    width: 300px;
+    height: 300px;
+    background-color: coral;
+    margin : 20px auto;
+    padding: 10px 20px 30px 40px;
+
+    /* 
+    margin bisa 3 nilai ukuran,style,warna
+    style ada 3
+    solid, dotted, dashed,double
+    */
+    border: 5px solid black;
+    /* 
+    border bisa hanya 1 sisi dengan border-left dsb 
+    border menambah ukuran box
+    */
+}
+
+/* di css terdapat box-sizing yang memungkinkan kita untuk membuat padding border dan dimensi tanpa harus mengalkulasi */
+div.empat,div.lima{
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box; 
+    /* akan membuat width tetep 600px */
+} 
+.empat{
+       background-color: royalblue; 
+       padding: 10px;
+       border: 5px solid red;
+ }
+
+ .lima{
+       background-color: lightgreen; 
+       padding: 30px;
+       border: 10px dashed yellow;
+ }
