@@ -1,0 +1,56 @@
+/* 
+setiap tag pada HTML berada di dalam sebuah "kotak". properti display pada css
+mengatur perilaku dari kotak tersebut.
+setiap tag html memiliki nilai default untuk properti display. tetapi properti 
+tersebut dapat diubah dengan mengganti valuenya.
+
+value dari diplay ada 4 yaitu
+• inline
+elemen yang secara default tidak memberikan baris baru ketika dibuat
+lebar dan tinggi elemen sebesar konten yang ada didalamnya
+tidak dapat mengatur tinggi dan lebar dari elemen ini
+margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal
+• inline-block
+tidak ada element yang secara defualt bernilai inline-block
+properti diubah secara manual
+perilaku dasarnya sama dengan inline
+perbedaannya yaitu dapat diatur tinggi dan lebarnya
+• block
+elemen secara default memberikan baris baru
+jika tidak diatur lebarnya maka defaultnya memenuhi browser atau parentnya
+kita dapat mengatur tinggi dan lebar dari elemen block
+di dalam elemen block kita dapat menyimpan tag dengan elemen inline, inline block, atau bahkan elemen block lagi
+• none
+
+setiap tag memiliki properties display
+div defaultnya
+div {
+    display: block;
+}
+
+span defaultnya
+span {
+    display: inlinel
+}
+*/
+
+.navigasi{
+    background-color:pink;
+}
+
+.main{
+    background-color: lime;
+    width: 600px;
+}
+
+.main h2{
+    background-color: yellow;
+}
+
+.copyright{
+    background-color: blue;
+}
+
+.main span{
+    background-color: lightblue ;
+} 
