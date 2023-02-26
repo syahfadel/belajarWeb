@@ -1,0 +1,80 @@
+/* 
+properti dari dimensi ada 2 yaitu
+width untuk lebar
+height tinggi
+
+terdapat 3 satuan yaitu
+px absolute
+% relative 
+in, cm,mm, pt, pc
+*/
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color : salmon;
+}
+
+.div1{
+    background-color: lightgreen;
+    width: 200px;
+    height: 200px;
+}
+
+.div2{
+    background-color: lightblue;
+    width: 50%;
+    height: 200px;
+}
+
+.satu{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+
+.dua{
+    width: 120% ; /* jika lebih besar maka akan keluar dari elemen parentnya.*/
+    background-color: aqua;
+}
+
+/* 
+overflow properti css untuk mengatur perilaku elemen dengan kasus yang keluar dari parentnya. ada 4 value
+visible default, jika ada elemen keluar dari parent akan diperlihatkan
+auto secara otomatis menambahkan scroll jika konten tidak cukup 
+hidden konten akan disembunyikan
+scroll mirip auto tapi jika konten cukup scroll tetap ada
+*/
+
+h3{
+    text-align: center;
+}
+
+.div3 {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+}
+
+.div4 {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+}
+
+.div5 {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.div6 {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+}
