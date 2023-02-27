@@ -1,0 +1,142 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+}
+
+.container{
+    width: 950px;
+    background-color: white;
+    margin: auto;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    padding-top: 5px ;
+}
+
+li {
+    margin: 0;
+    display: inline-block;
+}
+
+.header{
+    background-color: lightskyblue;
+    border-bottom: 5px salmon solid;
+    margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header  a{
+    text-decoration: none;
+    margin: 5px;
+    color: salmon;
+    font-weight: bold;
+}
+
+.header a:hover{
+    color : #feb072
+}
+
+
+.main{
+    padding-top: 100px;
+    margin-left: 10px;
+}
+
+.satu, .dua, .tiga ,
+.empat, .lima, .enam,
+.tujuh, .delapan, .sembilan
+{
+    width: 200px;
+    height: 200px;
+}
+
+/* 
+position memungkinkan kita menggeser elemen tanpa mempengaruhi elemen sekitarnya
+terdapat 4 nilai yaitu
+• static (default)
+jika selain static maka akan membuat elemen seolah olah berada di dimensi berbeda
+elemen yang diberi position selain static dapat menggunakan properti
+top,left,bottom dan right untuk mengatur posisinya
+• relative
+ruang yang sebelumnya ditempati oleh eleme nya tetap ada
+elemen akan bergerak relatif terhadap posisi semula
+• absolut
+jika elemen diberi absolute maka akan maju satu dimensi lalu posisi lama akan diisi
+oleh elemen lainnya. ruang elemen tersebut dianggap tak ada
+elemen bergerak relatif dari posisi element parentnya selama elemen parent memiliki
+posisi yang juga non static
+• fixed
+relatif terhadap window sehingga jika di scroll akan tetap diposisi
+contoh bagia header
+*/
+
+.satu{
+    background-color: lightgreen;
+}
+.dua{
+    background-color: violet;
+    position: relative;
+}
+.tiga{
+    background-color: gold;
+}
+.empat{
+    background-color: lightgreen;
+}
+.lima{
+    background-color: violet;
+    position: relative;
+    top: 30px; /* yang berarti menggeser elemen kebawah sejauh 30px*/
+    left: 50px;
+}
+.enam{
+    background-color: gold;
+}
+
+.absolute{
+    width: 600px;
+    height: 650px;
+    border: 5px solid green;
+    position: relative;
+    /* relative digunakan untuk memajukan class absolute sehingga sama dengan class delapan*/
+}
+
+.tujuh{
+    background-color: lightgreen;
+}
+.delapan{
+    background-color: violet;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sembilan{
+    background-color: gold;
+}
+
+.top{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: aqua;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.top:hover{
+    background-color: #00afff;
+    font-weight: bold;
+}
