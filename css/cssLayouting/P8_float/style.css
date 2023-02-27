@@ -1,0 +1,186 @@
+/* 
+float merupakan properti pada css yang mengatur posisi sebuah elemen. sebuah elemen
+dapat dipaksa untuk berada disebelah kiri atau kanan dari parent/pembungkusnya dengan menggunakan properti ini
+terdapat 3 nilai pada float
+none (default)
+left
+right
+
+*/
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    background-color: #eaeaea;
+}
+
+.main{
+    margin: auto;
+    width: 900px;
+    background-color: white;
+}
+
+.header {
+    background-color: white;
+    border-bottom: 5px salmon solid;
+}
+
+ul{
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: salmon;
+}
+
+a:hover{
+    background-color: lightskyblue;
+    color:white;
+}
+
+h1,h2{
+    margin-left: 5px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 0;
+    padding: 5px;
+    text-align : center;
+}
+
+.satu, .dua, .tiga {
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    width: 500px;
+    border: 5px solid black;
+    margin: auto;
+    padding: 5px;
+    /* overflow: auto; cara over flow */
+}
+
+.satu {
+    background-color: salmon;
+}
+
+.dua{
+    background-color:  lightgreen;
+    float: right; /*jika pakai float maka akan out of flow*/
+}
+
+.tiga{
+    background-color: lightskyblue;
+}
+
+/* 
+kapan kita menggunakan float?
+• Text wrapping
+membuat teks mengelilingi gambar /elemen lain
+• image gallery
+membuat serangkaian gambar menjadi galeri
+• multi-column layout
+membuat halaman memiliki beberapa kolom
+•  dll 
+
+ada beberapa cara untuk membersihkan float
+• menggunakan property overflow
+• <div> kosong
+overflow kurang tepat karena yang tepat menggunakan properti clear
+yang memiliki nilai left, right, both. tapi harus menggunakan div kosong
+• menggunakan teknik micro clearfix
+ada yang bilang div kosong tidak baik karena membuat program tidak rapih 
+karena adanya div kosong. solusi lain yaitu dengan menggunakan clearfix 
+dari laman https://nicolasgallagher.com/micro-clearfix-hack/
+lalu copas ke css paling bawah
+
+*/
+
+.clear{
+    clear: left;
+}
+
+.text-wrapping img {
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+}
+
+.kotak {
+    width :80px;
+    height : 80px;
+    color : white;
+    background-color: salmon;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2px;
+    float: left;
+}
+
+.multi-column{
+    width: 800px;
+    border: 5px solid black;
+    margin: auto;
+    padding: 5px;;
+}
+
+.kiri{
+    float: left;
+    width: 150px;
+    height: 500px;
+    background-color: salmon;
+}
+
+.tengah{
+    float: left;
+    width: 500px;
+    height: 500px;
+    background-color: lightskyblue;
+}
+
+.kanan{
+    float: left;
+    width: 150px;
+    height: 500px;
+    background-color: lightgreen;
+}
+
+.footer{
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* clear fix */
+/* tambahkan cf di class yang ingin dibersihkan */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
