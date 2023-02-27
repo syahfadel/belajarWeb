@@ -39,3 +39,24 @@ refactoring sederhana
 function jumlahVolumeDuaKubus(a,b){
     return Math.pow(a,3) + Math.pow(b,3);
 }
+
+/*
+js tidak menganut block scope namun function scope
+if{true}{
+    var genap = 'true';
+}
+
+if(genap){
+    console.log('genap')
+}
+
+maka genap akan tampil tidak seperti c++ yang akan error  
+*/ 
+
+/*
+function declaration
+function identifier (parameteropt) { functionBody}
+
+function expression 
+var variabel = function identifieropt (parameteropt) {functionBody}
+*/ 
