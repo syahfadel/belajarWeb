@@ -65,6 +65,7 @@ var mhs = buatObjectMahasiswa("Syah Fadel Putra Dwingga", "1810953019", "syahfad
 // Constructor Function, adalah function khusus yang membuat objek. nama function harus diawali huruf besar untuk membedakan declaration dan constructor
 function Mahasiswa(nama, nim, email, jurusan) {
     // pada constructor tidak perlu var mhs = {}; dan return mhs
+    // this untuk membuar properties
     this.nama = nama;
     this.nim = nim;
     this.email = email;
