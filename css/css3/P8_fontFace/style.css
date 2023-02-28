@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: 'Alex Brush';
+    src: url(AlexBrush-Regular.ttf) format('truetype');
+}
+
+
+/* 
+digunakan untuk mengelola font di css
+font yang dipilih harus ada di client/user
+namun jika tidak ingin pusing memikirkan itu bisa memakai cara kedua
+yaitu menggunakan layanan google fonts https://fonts.google.com 
+
+*/
+
+.satu{
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Tangerine';
+}
+
+/* 
+jika google tetap tidak memenuhi maka bisa menggunakan cara ketiga yaitu
+@font-face (harus di awal css )
+harus punya fontnya dahulu, lalu disimpan didalam folder css
+bisa download dari https://fontsquirrel.com
+*/
+
+.dua{
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Alex Brush';
+}
