@@ -1,0 +1,29 @@
+div {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    text-align: center;
+    line-height: 300px;
+}
+
+.satu{
+    border-radius: 50 px;
+}
+
+.dua{
+    border-radius: 50%;
+}
+
+.tiga{
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    /* dapat disingkat menjadi border-radius : 0 % 50% 0% 50; dimulai dari atas kiri, atas kanan, bawah kanan, bawah kiri */ 
+}
+
+.empat{
+    border-radius: 50%;
+    background-image: url(fadel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* supaya gambar penuh*/
+}
