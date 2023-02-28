@@ -1,0 +1,32 @@
+.satu{
+    width: 300px;
+    height: 300px;
+    background-color: #39b54a;
+    margin: 50px auto;
+    /* 
+    properti menambahkan bayanagan yaitu box-shadow terdiri dari 4 value parameter
+    wajib
+    <x-offset> <y-offset> <blur> <color>
+    bergerak horizontal, bergerak secara vertikal, berapa besar blur, warna bayangan
+    optional
+    <inset> <x-offset> <y-offset> <blur> <spread> <color>
+    spread yaitu menambahkan ukuran atau size dari bayangan 
+    inset membuat bayangan berapa di dalam kotak tidak diluar value berupa inset
+    */
+    box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, .75); 
+    /* box-shadow: inset 5px 5px 10px 4px rgba(0, 0, 0, .75);  */
+    /* dapat menambah bayangan dengan memberikan koma pada value boxshadow
+    box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, .75), 5px 5px 10px 4px rgba(255, 0, 0, .75); 
+    */
+}
+
+.dua{
+    width: 300px;
+    height: 300px;
+    background-image: url(fadel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, .75), 0px 0px 0px 7px rgba(0, 175, 0, .75); 
+    border-radius: 50%;
+}
