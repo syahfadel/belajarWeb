@@ -1,0 +1,21 @@
+/* 
+text-shadow terdapat 4 nilai yaitu
+<x-offset> <y-offset> <blur> <color>
+sama seperti boxshadow namun tidak terdapat inset dan spread
+*/
+
+h1 {
+    font-family: arial;
+    font-size: 100px;
+    text-align: center;
+}
+
+.satu{
+    text-shadow: 5px 5px 10px black;
+}
+
+.dua{
+    color: white;
+    text-shadow: 0 2px 1px black;
+
+}
