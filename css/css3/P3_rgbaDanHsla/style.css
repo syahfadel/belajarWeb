@@ -1,0 +1,31 @@
+body{
+    background-color: lightblue;
+}
+
+
+
+.satu {
+    position:absolute;
+    top:0; 
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 102, 0, 0.8);
+    /* rgba() red green blue alpha, alpha merupakan transparansi dengan nilai yang sama seperi opacity
+    namun anaknya tidak ikut transparan
+    */
+    /* selain rgba ada juga yang lain yaitu HSLa (hue, saturation, lightness, alpha) */
+    background-color: hsla(24, 100%, 63&, 0.8);
+
+}
+
+.dua {
+    
+    width: 100px;
+    height: 100px;
+    background-color: green;    
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    
+ 
+}
