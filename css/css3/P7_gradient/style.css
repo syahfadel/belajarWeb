@@ -1,0 +1,60 @@
+/* 
+terdapat 2 tipe gradient yang dapat digunakan yaitu
+1. linear-gradient
+memberikan gradiasi warna secara garis lurus
+2. radial-gradient
+memberikan gradiasi warna secara melingkar 
+
+kedua tipe tersebut bukan property css3, melainkan value
+untuk background-image
+*/
+
+div{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    
+}
+
+.satu{
+background-image: linear-gradient(90deg ,red, yellow ,green);
+/* 
+selain menggunakan sudut dapat juga bernilai
+to left, to right, to top, to bottom,
+to left top, to right top, to right bottom, to left bottom
+*/
+}
+
+
+.dua{
+/* color stop dapat digunakan untuk mengubah bobot warna */
+background-image: linear-gradient(to right ,red 63%, green 80%);
+/* persen dilihat dari keseluruhan (dari kiri ke kanan) */
+}
+
+.tiga{
+    /* warna awal akan jadi pusat lingkaran 
+    perbadaan nilai radial dengan linier, pada radial terdapat tipe yang bernilai
+    ellipse (default) & circle, dan ada jangkauan yang merukan jangkauan dari gradasi dan dapan mengatur posisi pusatnya
+    
+    jangkuan merupakan jarak dari pusat gradient ke sisi terluarnya
+    terdapat 4 nilai
+    closest-corner
+    jarak dari pusat ke sudut terdekat element
+    closest-side
+    jarak dari pusat ke sisi terdekat element
+    farthest-corner
+    jarak dari pusat ke sudut terjauh element
+    farthest-side
+    jarak dari pusat ke sisi terjauh element
+    */
+    background-image: radial-gradient( circle closest-side, red,blue );
+}
+
+.empat{
+    background-image: radial-gradient(circle farthest-corner, red,blue);
+}
+
+.lima{
+    background-image: radial-gradient(circle farthest-side at top left, red, blue);
+}
