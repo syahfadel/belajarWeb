@@ -1,0 +1,96 @@
+/* 
+ Filter merupakan properti css3 yang digunakan untuk memberikan efek visual pada gambar, background atau border
+ filter : <tipe=filter>;
+ terdapat 10 tipe filter
+ blur (px)
+ brightness (angka |%)
+ contrast (angka |%)
+ saturate (angka |%)
+ grayscale (angka |%)
+ sepia (angka |%)
+ hue-rotate (deg)
+ invert (angka |%)
+ opacity (angka |%)
+ drop-shadow (sama seperti box-shadow)
+ */
+ body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaeaea;
+ }
+
+ div {
+    background-color: white;
+    margin: auto;
+    width: 950px;
+ }
+
+ h2 {
+    text-align: left;
+ }
+
+ .satu{
+    filter : blur(10px);
+ }
+
+ .dua1 {
+    filter : brightness(150%); /* defaultnya 1 atau 100%*/
+ }
+ .dua2 {
+    filter : brightness(50%); /* defaultnya 1 atau 100%*/
+ }
+
+ .tiga1{
+    filter: contrast(150%)
+ }
+
+ .tiga2{
+    filter: contrast(50%)
+ }
+
+ .empat1{
+    filter:saturate(200%);
+ }
+ .empat2{
+    filter:saturate(50%);
+ }
+
+ .lima1{
+    filter:grayscale(100%);
+ }
+ .lima2{
+    filter:grayscale(0%);
+ }
+
+ .enam1{
+    filter:sepia(100%);
+ }
+ .enam2{
+    filter:sepia(0%);
+ }
+
+ .tujuh1{
+    filter:hue-rotate(100deg); /* untuk memutar warnanya*/
+ }
+ .tujuh2{
+    filter:hue-rotate(0deg);
+ }
+
+ .delapan1{
+    filter:invert(100%); /* untuk memutar warnanya*/
+ }
+ .delapan2{
+    filter:invert(0%);
+ }
+
+ .sembilan1{
+    filter:opacity(100%); /* untuk memutar warnanya*/
+ }
+ .sembilan2{
+    filter:opacity(50%);
+ }
+
+ .sepuluh1{
+    margin: 5px;
+    filter:drop-shadow(5px 5px 5px black); /* untuk memutar warnanya*/
+ }
