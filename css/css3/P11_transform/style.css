@@ -1,0 +1,115 @@
+/* 
+transform merupakan properti yang memungkinkan kita dapat memanipulasi
+format visual dari element HTML.
+ada dua jenis ada 2D dan 3D
+terdapat 4 fungsi transformasi
+scale memperbesar/kecil
+rotate merotasi
+skew untuk menjadi miring/condong
+translate mengubak posisi
+
+scale(angka), scaleX(angka), scaleY(angka)
+rotate(deg), rotateX(deg), rotateY(deg)
+skew(deg), skewX(deg), skewY(deg)
+translate(px), translate(px), translate(px)
+*/
+body{
+    background-color: #eaeaea;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    width: 950px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.kotak1{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto 0;
+}
+
+.kotak2{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto 0;
+    transition: 1s;
+}
+
+.kotak2:hover{
+    transform: scale(1.5); /*jika scale(1.5, 2) maka 1.5 sumbu x 2 sumbu y*/
+}
+
+.satu{
+    padding: auto;
+}
+
+.kotak3{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto 0;
+    transition: 1s;
+}
+
+.kotak3:hover{
+    transform: rotate(180deg);
+}
+
+.kotak4{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto 0;
+    transition: 1s;
+}
+
+.kotak4:hover{
+    transform: rotateX(180deg);
+}
+
+.kotak5{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto 0;
+    transition: 1s;
+}
+
+.kotak5:hover{
+    transform: rotateY(180deg);
+}
+
+.kotak6{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto 0;
+    transition: 1s;
+}
+
+.kotak6:hover{
+    transform: skew(45deg);
+}
+
+.kotak7{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto 0;
+    transition: 1s;
+}
+
+.kotak7:hover{
+    transform: translate(50px,100px);
+}
