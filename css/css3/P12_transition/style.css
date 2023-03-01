@@ -131,7 +131,7 @@ transisi yang nilainya s/ms
     width: 100px;
     height: 100px;
     background-color: salmon;
-    transition:  margin-left 3s, transform 3s 2s, background-color 2s 3s; }
+    transition:  margin-left 3s, transform 3s 2s, background-color2s 3s; }
 
 .bungkus:hover .kotak9{
     transform: rotate(180deg);

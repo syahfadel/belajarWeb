@@ -1,0 +1,81 @@
+/* 
+pada animation terdapat yang namanya keyframe yang meripakan keadaan antara
+keyframe dibuat dengan properti yang dapat dibuat dimana pun di css tanpa harus ada selector
+
+@keyframes [name]{
+    from {
+        [property-css]
+    }
+
+    to {
+        [property-css]
+    }
+}
+*/
+
+/* 
+dengan transisi
+
+.kotak {
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+    background-color: salmon;
+}
+
+.kotak:hover{
+    width: 500px;
+} */
+
+.kotak {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    /* animation: animasiKotak 1s ease;
+    jika dimasukan disini maka animasi akan berjalan ketiak web baru dibuka
+    */
+}
+
+.kotak:hover{
+    animation: animasiKotak 1s ease 3 alternate backwards;
+    /* akan kembali jika sudah selesai animasinya */
+}
+
+@keyframes animasiKotak{
+    from{
+        width: 200px;
+    }
+
+    /* bisa menambahkan kondisi antara */
+    50%{
+        width: 500px;
+        height: 200px;
+    }
+
+    to{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+/* nilai apa saja yang bisa diberukan di iproperti animation
+animation: [name] [duration] [timing-function] [delay] [iteration-count]
+[direction] [fill-mode] [play-state] 
+
+interation count berisikan angka berapa banyak pengulangan atau dapat juga infinite
+animation: animasiKotak 1s ease 3;
+
+direction terdapat 4 nilai
+normal | reverse | alternate | alternate-reverse
+alternate jika kita memilih 2 kali iterasi
+maka iterasi pertama akan normal dan kedua akan reverse
+
+fill-mode untuk mentukan akhir seperti apa.
+terdapat 4 nilai
+none | forward |backwards | both
+jika forward maka animasi akan berhenti dikeadaan akhir
+
+play-state terdapat dua nilai
+running berjalan sebagai mana mestinya
+paused animasi akan berhenti biasa digunakan dengan js
+*/ 
