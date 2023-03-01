@@ -1,0 +1,140 @@
+/* 
+Transition memungkinkan kita untuk mengubah nilai dari properti HTML secara halus 
+perbedaan transition dan animation
+tansition hanya ada gerakan awal dan akhir
+animation dapat bergerak berkali kali
+
+transition : [properti] <durasi> [fungsi] [delay];
+yang wajib durasi
+durasi berisi angka dengan satuan s/ms
+transisi dimasukan dikeadaan awal
+*/
+
+body{
+    background-color: #eaeaea;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    margin: auto;
+    width: 950px;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.kotak1{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: 0.5s;
+}
+
+.kotak1:hover{
+    transform: rotate(180deg);
+}
+
+/* 
+properti menentukan properti apa saja yang akan dilakukan transisi
+biisa mengubah beberapa properti
+*/
+
+.kotak2{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: 0.5s; /*defaultnya properti all*/
+    /* jika properti margin-left berarti pergeserannya saja yang bergerak secara halus sedangkan
+    perputaran dan warna tidak */
+}
+
+.bungkus{
+    border: 5px black solid;
+    margin: 3px;
+}
+
+.bungkus:hover .kotak2{
+    transform: rotate(180deg);
+    margin-left:840px; 
+    background-color: royalblue;
+}
+
+/* alasan mengapa harus diberi div pembungkus untuk menghover divnya saja tidak kotaknya
+jika langsung hover ke kotak maka mouse harus mengikuti kotak sedangkan jika ada div maka tidak perlu
+mengikuti kotak */
+
+/*
+fungsi transisi disebut juga timing function
+terdapat beberapa nilai yaitu
+ease (default)
+ease-in
+ease-out
+ease-in-out
+linear
+cubic-bezier(w,x,y,z)
+
+*/
+
+.kotak{
+    text-align:center;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+}
+.kotak3{
+    text-align:center;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: all 0.5s ease; 
+}
+
+.kotak4{
+    transition: all 0.5s ease-in; 
+}
+
+.kotak5{
+    transition: all 0.5s ease-out; 
+}
+
+.kotak6{
+    transition: all 0.5s ease-in-out; 
+}
+
+.kotak7{
+    transition: all 0.5s linear; 
+}
+
+.kotak8{
+    transition: all 0.5s cubic-bezier(.08,.82,1,.06); 
+    /* nilai parameter diperoleh dari inspect elemen untuk mendapatkan kurva yang diinginkan  */
+}
+
+.bungkus:hover .kotak
+{
+    transform: rotate(180deg);
+    margin-left:840px; 
+    background-color: royalblue;
+}
+
+/* 
+Selanjutnya delay yang dapat digunakan untuk memberikan delay atau waktu tunggu sebelum menajlankan
+transisi yang nilainya s/ms
+*/
+.kotak9{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition:  margin-left 3s, transform 3s 2s, background-color 2s 3s; }
+
+.bungkus:hover .kotak9{
+    transform: rotate(180deg);
+    margin-left:840px; 
+    background-color: royalblue;
+}
