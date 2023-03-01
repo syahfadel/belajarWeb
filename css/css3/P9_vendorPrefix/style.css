@@ -1,0 +1,20 @@
+/* 
+vendor prefix diperlukan untuk membuat css yang telah kita buat compatible diseluruh browser
+dengan menambahkan awalan pada awalan properti css3 yang belom disupport oleh beberapa browser tertentu
+caranya
+-webkit-<properti-css3> u/ chrome, safari, opera versi baru
+-moz-<properti-css3> firefox 
+-ms-<properti-css3> internet explorer
+-o-<properti-css3>  opera versi dulu
+karena tidak semua browser suppor CSS3
+*/
+
+body {
+    text-align: center;
+}
+
+img {
+    /* contoh misal tidak di support */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
