@@ -39,7 +39,7 @@ h1{
     position: relative;
 }
 
-.gallery li img{
+.gallery li a img{
     border-radius: 50%;
 }
 
@@ -70,4 +70,82 @@ h1{
 
 .clear{
     clear: both;
+}
+
+
+/* overlay */
+
+.overlay{
+    position: fixed;
+    /* menghilangkan gambar full */
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 999;
+    transition: 0.8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.overlay img {
+    max-height: 100%; /*menyesuaikan dengan browser*/
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img{
+    animation: zoomDanDate 1s;
+}
+
+.overlay .close{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px white solid;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close{
+    animation: slideDownFade .5s .5s forwards;
+}
+
+/* animasi */
+@keyframes zoomDanFade{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0%{
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;;
+    }
+    
 }
