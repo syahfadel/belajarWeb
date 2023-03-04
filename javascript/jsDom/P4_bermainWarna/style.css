@@ -1,0 +1,73 @@
+html, body{
+    height: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+li {
+    margin :2px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    transition: .3s;
+}
+
+li:hover{
+    transform: scale(1.1);
+}
+
+.biru{
+    background-color: lightskyblue;
+}
+
+.hijau {
+    background-color: lawngreen;
+}
+
+.salmon {
+    background-color: salmon;
+}
+
+.putih {
+    background-color: white;
+}
+
+.bBiru{
+    background-color: lightskyblue;
+}
+
+.bHijau {
+    background-color: lawngreen;
+}
+
+.bSalmon {
+    background-color: salmon;
+}
+
+
+.kotak{
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
+}
+
+.slidemerah{
+    background-color: red;
+}
+
+.slidehijau{
+    background-color: green;
+}
+
+.slidebiru{
+    background-color: blue;
+}
